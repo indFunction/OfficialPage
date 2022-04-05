@@ -1,0 +1,48 @@
+{
+    "name": "ind-function",
+    "description": "A indFunction's Homepage",
+    "author": "indDef voidFunction <indFunction@gmail.com>",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "format": "prettier --write --ignore-path .gitignore --ignore-path .prettierignore .",
+        "formal": "yarn lint --fix"
+    },
+    "dependencies": {
+        "@mdx-js/loader": "^2.1.0",
+        "@mdx-js/react": "^2.1.0",
+        "@next/mdx": "^12.1.0",
+        "@types/styled-components": "^5.1.24",
+        "next": "12.1.0",
+        "next-mdx-remote": "^4.0.2",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "styled-components": "^5.3.3"
+    },
+    "devDependencies": {
+        "@types/node": "17.0.22",
+        "@types/react": "17.0.41",
+        "@typescript-eslint/eslint-plugin": "^5.16.0",
+        "eslint": "8.11.0",
+        "eslint-config-next": "12.1.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-mdx": "^1.17.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "json-loader": "^0.5.7",
+        "prettier": "^2.6.0",
+        "raw-loader": "^4.0.2",
+        "typescript": "^4.6.2"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "printWidth": 160,
+        "trailingComma": "none",
+        "semi": true,
+        "singleQuote": true,
+        "jsxSingleQuote": true
+    }
+}
