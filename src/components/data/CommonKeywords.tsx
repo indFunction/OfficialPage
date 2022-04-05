@@ -1,0 +1,30 @@
+type Keyword = string;
+
+export const commonKeywords: Keyword[] = [
+    '独立関数',
+    'indFunction',
+    'ウェブサイト',
+    'website',
+    'ホームページ',
+    'homepage',
+    'ポートフォリオ',
+    'portfolio',
+    '作品',
+    'works',
+    '小説',
+    'novel',
+    'ブログ',
+    'blog',
+    '解説',
+    'explanation',
+    '写真',
+    'photo',
+    'イラスト',
+    'illustration',
+    '動画',
+    'video',
+    'ソフトウェア',
+    'software',
+    '備忘録',
+    'memo'
+];
