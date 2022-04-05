@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps, router }: AppProps) {
                 <meta property='author' content='独立関数：独立定義虚構関数 / indFunction: indDef.voidFunction' />
 
                 <meta property='og:site_name' content='独立関数' />
-                <meta property='og:url' content={`https://indFunction.com${router.asPath}`} />
+                <meta property='og:url' content={`https://indFunction.work${router.asPath}`} />
                 <meta property='og:image' content='/hero.png' />
 
                 <link rel='icon' href='/favicon.ico' />
