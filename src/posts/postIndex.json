@@ -1,1 +1,30 @@
-[]
+[
+    {
+        "path": "0007",
+        "isPublish": true
+    },
+    {
+        "path": "0006",
+        "isPublish": true
+    },
+    {
+        "path": "0005",
+        "isPublish": true
+    },
+    {
+        "path": "0004",
+        "isPublish": true
+    },
+    {
+        "path": "0003",
+        "isPublish": true
+    },
+    {
+        "path": "0002",
+        "isPublish": true
+    },
+    {
+        "path": "0001",
+        "isPublish": true
+    }
+]
