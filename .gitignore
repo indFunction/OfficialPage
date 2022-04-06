@@ -38,4 +38,4 @@ yarn-error.log*
 *.tsbuildinfo
 
 # custom
-src/media
+public/media/images/**/raw
