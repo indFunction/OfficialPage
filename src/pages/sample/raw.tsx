@@ -3,6 +3,7 @@ import { Fragment } from 'react';
 import { Body } from 'components/common/Body';
 import { PageMeta } from 'components/common/PageMeta';
 import { DocumentStyle } from 'components/contents/DocumentStyle';
+import { ImageLink } from 'components/contents/document/ImageLink';
 import { InformationCard } from 'components/contents/document/InformationCard';
 import { PictureGallery } from 'components/contents/document/PictureGallery';
 import { Title } from 'components/contents/document/Title';
@@ -383,6 +384,14 @@ float CorrectPositiveAngle(float val)
                     <h3>動画 (YouTube サムネイル)</h3>
 
                     <VideoLinkYouTube url='g39GEXdUHz0' ratio={56.25} />
+
+                    <h3>リンク (サムネイル付き)</h3>
+
+                    <ImageLink
+                        href='https://getunityinputcode.indfunction.work/'
+                        src='https://raw.githubusercontent.com/indFunction/GetUnityInputCode/main/media/hero.png'
+                        ratio={56.25}
+                    />
                 </DocumentStyle>
             </Body>
         </Fragment>
