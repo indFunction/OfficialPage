@@ -2,6 +2,7 @@
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
 import { FC } from 'react';
 import { Code, Example, Point, Warning } from 'components/contents/document/BlockText';
+import { ImageLink } from 'components/contents/document/ImageLink';
 import { InformationCard } from 'components/contents/document/InformationCard';
 import { Link } from 'components/contents/document/Link';
 import { PictureGallery } from 'components/contents/document/PictureGallery';
@@ -19,6 +20,7 @@ type PageBuilderProps = {
 const components = {
     Code,
     Example,
+    ImageLink,
     InformationCard,
     Link,
     PictureGallery,
