@@ -1,5 +1,9 @@
 [
     {
+        "path": "0008",
+        "isPublish": true
+    },
+    {
         "path": "0007",
         "isPublish": true
     },
