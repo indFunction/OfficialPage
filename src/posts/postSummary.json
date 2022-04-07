@@ -1,5 +1,15 @@
 [
     {
+        "path": "0008",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/0008.png",
+        "title": "Unity Input System 入力コード生成ツール",
+        "description": "キーボード，マウス，ゲームパッドの入力を取得するコードを生成します。",
+        "date": [2022, 4, 7],
+        "category": "software",
+        "keywords": ["ウェブ", "ツール", "ユーティリティー", "Unity", "Input System"]
+    },
+    {
         "path": "0007",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/0007.png",

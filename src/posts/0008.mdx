@@ -1,0 +1,32 @@
+---
+thumbnail: '/media/thumbnails/0008.png'
+title: 'Unity Input System 入力コード生成ツール'
+description: 'キーボード，マウス，ゲームパッドの入力を取得するコードを生成します。'
+date: [2022, 4, 7]
+category: 'software'
+keywords: ['ウェブ', 'ツール', 'ユーティリティー', 'Unity', 'Input System']
+---
+
+　私は記憶力が悪いので、Unityでゲームやツールを制作していると「あれ、このキーを取得するコードは何だっけ？」という状況に陥りやすく、しかしインターネットで検索しても公式リファレンス以外に頼れる場所がなく、またそれも探すのが面倒だったりするので、それっぽいツールを作ってみました。その名も「**Unity Input System 入力コード生成ツール**」です。相変わらずのネーミングセンスです。
+
+<ImageLink href='https://getunityinputcode.indfunction.work/' src='https://raw.githubusercontent.com/indFunction/GetUnityInputCode/main/media/hero.png' />
+
+　この（ウェブ）ツールは、画面上の視覚的な仮想デバイスからキーやボタンを指定することで、直感的に入力コードを取得することができます。コードの末端にある入力の判定もワンクリックで付与できるため、一般的な用途であれば不自由なく利用できると思います。
+
+　対応しているデバイスは**104キーボード**（US配列のキーボード），**2ボタンマウス**，**X Inputゲームコントローラー**の3つです。出来るかぎりの環境に対応することを目安としていれば、特に問題はありません。逆に、特殊な設計を目指していないプログラムに上記以外のキーやボタンを使用する場合は、少々の注意や配慮が必要かもしれません。
+
+　初期画面ではキーボードのみが描画されていますが、右にスクロールすることでマウス、ゲームコントローラーのインターフェースが表れます。
+
+　申し訳ありませんが、FHD（1920px × 1080px）以下の解像度やディスプレイでは、全体が映らない可能性があります。おそらくパソコンから閲覧・使用する方が九分九厘だと思うので大丈夫だとは思いますが、携帯デバイスでの閲覧・使用は推奨しません。
+
+　デバイスのデザイン（CSS）もフリーですので、何か必要であれば是非、ご活用ください。このツールで貴方の作業に効率化を齎すことができれば、幸いです。
+
+### 関連リンク
+
+- <Link href='https://getunityinputcode.indfunction.work/'>Unity Input System 入力コード生成ツール</Link>
+- <Link href='https://github.com/indFunction/GetUnityInputCode'>GitHub - indFunction / GetUnityInputCode</Link>
+- <Link href='https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/api/UnityEngine.InputSystem.Keyboard.html'>Unity Documentation - Input System / Class Keyboard</Link>
+- <Link href='https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/api/UnityEngine.InputSystem.Mouse.html'>Unity Documentation - Input System / Class Mouse</Link>
+- <Link href='https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/api/UnityEngine.InputSystem.Gamepad.html'>Unity Documentation - Input System / Class Gamepad</Link>
+- <Link href='https://forpro.unity3d.jp/unity_pro_tips/2021/05/20/1957/'>Unity for Pro - Unityの新入力システム・Input Systemを使おう</Link>
+- <Link href='https://www602.math.ryukoku.ac.jp/JKiso/charnames.html'>記号の読み方</Link>
