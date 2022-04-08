@@ -19,7 +19,7 @@ export const Summary: FC<SummaryProps> = ({ meta, type }) => {
         titleOtherTop = (
             <TitleOtherTop>
                 <SummaryDate meta={meta} />
-                <SummaryTags meta={meta} />
+                <SummaryTags meta={meta} type={type} />
             </TitleOtherTop>
         );
 
@@ -28,7 +28,7 @@ export const Summary: FC<SummaryProps> = ({ meta, type }) => {
         titleOtherBottom = (
             <TitleOtherBottom>
                 <SummaryDate meta={meta} />
-                <SummaryTags meta={meta} />
+                <SummaryTags meta={meta} type={type} />
             </TitleOtherBottom>
         );
 
@@ -98,6 +98,7 @@ const TitleDescription = styled.div`
 `;
 
 const TitleOtherTop = styled.div`
+    overflow-x: hidden;
     display: flex;
 `;
 

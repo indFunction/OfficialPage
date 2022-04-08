@@ -3,7 +3,12 @@ import styled, { css } from 'styled-components';
 import { categoryItems } from 'components/data/CategoryItems';
 import typePageMeta from 'types/PageMeta';
 
-export const SummaryTags: FC<{ meta: typePageMeta }> = ({ meta }) => {
+type SummaryTagsProps = {
+    meta: typePageMeta;
+    type: number;
+};
+
+export const SummaryTags: FC<SummaryTagsProps> = ({ meta, type }) => {
     let categoryTag;
     if (meta.category) categoryTag = <CategoryTag>{categoryItems.find((item) => item.category === meta.category).name}</CategoryTag>;
 
@@ -19,18 +24,34 @@ export const SummaryTags: FC<{ meta: typePageMeta }> = ({ meta }) => {
             </Fragment>
         );
 
-    return (
-        <Container>
+    return type == 1 ? (
+        <ContainerA>
             {categoryTag}
             {keywordTags}
-        </Container>
+        </ContainerA>
+    ) : (
+        <ContainerB>
+            {categoryTag}
+            {keywordTags}
+        </ContainerB>
     );
 };
 
-const Container = styled.div`
+const Container = css`
     display: flex;
-    flex-wrap: wrap;
     margin: 4px -4px 4px 4px;
+`;
+
+const ContainerA = styled.div`
+    ${Container}
+
+    flex-shrink: 0;
+`;
+
+const ContainerB = styled.div`
+    ${Container}
+
+    flex-wrap: wrap;
 `;
 
 const Tag = css`
