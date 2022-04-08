@@ -16,7 +16,19 @@ export const InformationCard: FC<ContainerProps> = ({ mainTitle, subTitle, icon,
     if (mainTitle) mainTitleContainer = <MainTitle>{mainTitle}</MainTitle>;
 
     let subTitleContainer;
-    if (subTitle) subTitleContainer = <SubTitle>{subTitle}</SubTitle>;
+    if (subTitle) {
+        if (subTitle.startsWith('https://') || subTitle.startsWith('http://')) {
+            subTitleContainer = (
+                <SubTitle>
+                    <a href={subTitle} target='_blank' rel='noreferrer'>
+                        {subTitle}
+                    </a>
+                </SubTitle>
+            );
+        } else {
+            subTitleContainer = <SubTitle>{subTitle}</SubTitle>;
+        }
+    }
 
     return (
         <Container className='item'>
