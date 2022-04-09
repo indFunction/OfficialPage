@@ -7,7 +7,7 @@ export const generateSummaryCard = (meta: typePageMeta, id?: string): string => 
     const date = fixDate(meta.date).join('.');
     const tags = meta.keywords
         .map((keyword) => {
-            return `#${keyword}`;
+            return `#${keyword}`.replace(' ', '_');
         })
         .join(' ');
     const url = `https://www.indfunction.work/posts/${id ? id : meta.path ? meta.path : 'error'}`;
