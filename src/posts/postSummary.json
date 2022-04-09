@@ -1,5 +1,15 @@
 [
     {
+        "path": "0009",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/0009.png",
+        "title": "高橋川の桜",
+        "description": "暖かい日差しが心地良いです。",
+        "date": [2022, 4, 9],
+        "category": "photo",
+        "keywords": ["石川県", "野々市市", "高橋川", "桜", "散歩", "カレー", "スイーツ"]
+    },
+    {
         "path": "0008",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/0008.png",
