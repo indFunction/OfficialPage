@@ -1,25 +1,10 @@
 import { FC } from 'react';
 import styled from 'styled-components';
 import typePageMeta from 'types/PageMeta';
-
-function fixDate(val: undefined | number, min: number, max: number, digit: number) {
-    if (val === undefined) return '';
-
-    if (val >= min && val <= max) {
-        return zeroPadding(val, digit);
-    } else if (val < min) {
-        return zeroPadding(min, digit);
-    } else {
-        return zeroPadding(max, digit);
-    }
-}
-
-function zeroPadding(val: number, digit: number) {
-    return String(val).padStart(digit, '0');
-}
+import { fixDate } from 'utils/FixDate';
 
 export const SummaryDate: FC<{ meta: typePageMeta }> = ({ meta }) => {
-    const date: string[] = meta.date ? [fixDate(meta.date[0], 1970, 2037, 4), fixDate(meta.date[1], 1, 12, 2), fixDate(meta.date[2], 1, 31, 2)] : [];
+    const date: string[] = meta.date ? fixDate(meta.date) : [];
 
     let display;
     if (date[0] && date[1] && date[2])
