@@ -1,5 +1,15 @@
 [
     {
+        "path": "0010",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/general/bookmark.png",
+        "title": "個人的なブックマーク；解説系YouTubeチャンネル",
+        "description": "個人的に気に入っているコンテンツを紹介します。",
+        "date": [2022, 4, 13],
+        "category": "memo",
+        "keywords": ["ブックマーク", "YouTube", "チャンネル", "科学", "数学", "物理", "化学", "社会", "歴史", "宇宙", "世界", "技術", "再現", "実験"]
+    },
+    {
         "path": "0009",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/0009.png",
