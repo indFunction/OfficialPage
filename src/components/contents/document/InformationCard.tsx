@@ -54,7 +54,6 @@ const Container = styled.div`
 
 const Head = styled.div`
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     margin: 8px;
 `;
@@ -81,6 +80,12 @@ const SubTitle = styled.div`
     font-weight: 600;
     font-size: 14px;
     color: ${({ theme: { colors } }) => colors.gray};
+
+    a {
+        word-break: break-all;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 800;
+    }
 `;
 
 const Main = styled.div`
