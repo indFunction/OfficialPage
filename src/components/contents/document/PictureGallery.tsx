@@ -4,11 +4,16 @@ import { DefaultItem } from 'components/contents/document/DefaultItem';
 
 type PictureGalleryProps = {
     data: string[];
+    border?: boolean;
     isSlide?: boolean;
     pictureNum?: number;
 };
 
-export const PictureGallery: FC<PictureGalleryProps> = ({ data, isSlide }) => {
+type PictureProps = {
+    border?: boolean;
+};
+
+export const PictureGallery: FC<PictureGalleryProps> = ({ data, border, isSlide }) => {
     const [pictureNum, setPictureNum] = useState(0);
 
     function changePictureIndex(n: number) {
@@ -26,7 +31,7 @@ export const PictureGallery: FC<PictureGalleryProps> = ({ data, isSlide }) => {
                 <SlideContainer>
                     <Button onClick={() => changePictureIndex(-1)}>&lt;</Button>
                     <SinglePictureContainer href={data[pictureNum]}>
-                        <Picture src={data[pictureNum]} />
+                        <Picture src={data[pictureNum]} border={border} />
                     </SinglePictureContainer>
                     <Button onClick={() => changePictureIndex(1)}>&gt;</Button>
                 </SlideContainer>
@@ -35,7 +40,7 @@ export const PictureGallery: FC<PictureGalleryProps> = ({ data, isSlide }) => {
             pictureContainer = data.map((item, index) => (
                 <Fragment key={index}>
                     <MultiPictureContainer href={item}>
-                        <Picture src={item} />
+                        <Picture src={item} border={border} />
                     </MultiPictureContainer>
                 </Fragment>
             ));
@@ -43,7 +48,7 @@ export const PictureGallery: FC<PictureGalleryProps> = ({ data, isSlide }) => {
     } else {
         pictureContainer = (
             <SinglePictureContainer href={data[0]}>
-                <Picture src={data[0]} />
+                <Picture src={data[0]} border={border} />
             </SinglePictureContainer>
         );
     }
@@ -117,11 +122,17 @@ const MultiPictureContainer = styled.a`
     }
 `;
 
-const Picture = styled.img`
+const Picture = styled.img<PictureProps>`
     && {
         object-fit: cover;
         display: block;
         width: 100%;
         height: auto;
+        ${({ border }) =>
+            border &&
+            css`
+                padding: 1px;
+                border: solid 1px ${({ theme: { colors } }) => colors.gray};
+            `}
     }
 `;
