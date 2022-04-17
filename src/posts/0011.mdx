@@ -1,0 +1,213 @@
+---
+thumbnail: '/media/thumbnails/0011.png'
+title: 'Play on Display'
+description: '大会で試合などを管理するためのユーティリティーです。'
+date: [2022, 4, 17]
+category: 'software'
+keywords: ['試合', 'トーナメント', 'GUI', '管理', 'ツール', 'ユーティリティー', 'Unity', '3D']
+---
+
+　某企画にて試合を管理するソフトウェアで効率化を図ろうという案が挙がったのですが、需要が少ないせいか満足できる代物をインターネットの波から見つけることができず、結果的に自作する羽目になりました。現代的なデザインと私のエゴが融合したグラフィック重視のソフトウェア「**Play on Display**」の始まりです。
+
+<ImageLink href='https://github.com/indFunction/PlayOnDisplay/releases' src='https://raw.githubusercontent.com/indFunction/PlayOnDisplay/main/Assets/Images/Hero/Hero%20(Type%20B%2C%20FHD).png' />
+
+## 概要
+
+　本ソフトウェアでは三次元空間を用いてトーナメント表の作成、並びに画像や文章を複数の（仮想）ディスプレイ単位で表示・管理することができます。円形に並べられたディスプレイを往来することで多くの情報が取り扱え、当然ながらデータの入力や出力に対応しています。
+
+## 機能
+
+　ディスプレイを作成した際に、取り扱う媒体（メディア）を選択します。ボタンを押すことで画面が切り替わります。
+
+<PictureGallery data={['/media/images/0011/0001.png']} border />
+
+### 試合
+
+　最大人数100人までのトーナメント表を自動的に生成します。3人以上の対戦人数の設定も可能で、セットアップ画面では専用のCSVファイル（本ソフトウェアで出力したデータ）の他にテキストファイル（TXT形式）から名簿を読み取る機能もあります。
+
+<PictureGallery data={['/media/images/0011/0002.png']} border />
+
+　メイン画面ではグラフィカルなトーナメント表が表示されます。プレイヤーのアイコンを選択し、名前や色の編集、勝敗の確定を行うことができます。左上に試合の情報、右上にデータの入出力を行うボタンが設置されています。
+
+<PictureGallery data={[
+    '/media/images/0011/0003.png',
+    '/media/images/0011/0004.png'
+]} border />
+
+### 画像
+
+　コンピューター内に保存されている（PNG形式もしくはJPG形式の）画像ファイルを表示します。どのような縦横比でも画面内に収まりますが、動作環境や画像ファイルの大きさ（解像度）によっては読み込みに時間が掛かります。ヒーロー画像の掲示に如何でしょうか。
+
+<PictureGallery data={['/media/images/0011/0005.png']} border />
+
+### 文章
+
+　文章を書き込むためのフィールドを表示します。画面上で直接テキストを編集するか、右上のボタンからテキストファイル（TXT形式）の入出力も可能です。リッチテキストには対応していません。スケジュールの表示などに活用できます。
+
+<PictureGallery data={['/media/images/0011/0006.png']} border />
+
+## 操作
+
+　基本的にマウスを用いて操作します。一部の操作はキーボードから行うこともできます。出来るかぎり直感的な操作を追求したので、おそらく初見でも扱えると思います。申し訳ありませんが、ゲームコントローラーには対応していません。
+
+### コマンド操作
+
+　右上の青いボタンからディスプレイの作成、赤いボタンからディスプレイの削除を行います。また、左右中央に設置されたボタンからディスプレイの移動と配置変更を行います。配置変更に関しては、現在の地点にあるディスプレイと矢印の方向にあるディスプレイを入れ替えるような感覚です。
+
+<PictureGallery data={['/media/images/0011/0007.gif']} border />
+
+　前面のインターフェースにあるボタンはホバーすることでコマンドの内容とショートカットキーが表示されます。ショートカットキーの一覧については以下の表を参考にお願いします。一部、ショートカットキーのみから実行可能なコマンドが存在するのでご注意ください。
+
+<table>
+    <thead>
+        <tr>
+            <th>キー</th>
+            <th>コマンド</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>`[F1]`</td>
+            <td>インターフェースの表示・非表示を切り替えます。</td>
+        </tr>
+        <tr>
+            <td>`[Ctrl]` + `[A]`</td>
+            <td>ディスプレイを追加します。</td>
+        </tr>
+        <tr>
+            <td>`[Ctrl]` + `[R]`</td>
+            <td>ディスプレイを削除します。</td>
+        </tr>
+        <tr>
+            <td>`[Left Arrow]`</td>
+            <td>前のディスプレイへ移動します。</td>
+        </tr>
+        <tr>
+            <td>`[Right Arrow]`</td>
+            <td>次のディスプレイへ移動します。</td>
+        </tr>
+        <tr>
+            <td>`[Ctrl]` + `[Left Arrow]`</td>
+            <td>ディスプレイを前のディスプレイと入れ替えます。</td>
+        </tr>
+        <tr>
+            <td>`[Ctrl]` + `[Right Arrow]`</td>
+            <td>ディスプレイを次のディスプレイと入れ替えます。</td>
+        </tr>
+        <tr>
+            <td>`[Y]`</td>
+            <td>警告ポップアップの「許可」を実行します。</td>
+        </tr>
+        <tr>
+            <td>`[N]`</td>
+            <td>警告ポップアップの「取消」を実行します。</td>
+        </tr>
+        <tr>
+            <td>`[Enter]`</td>
+            <td>エラーポップアップの「了解」を実行します。</td>
+        </tr>
+    </tbody>
+</table>
+
+### カメラ操作
+
+　全てのディスプレイでは画面の拡大や縮小、移動が行えます。ズーム（拡大・縮小）はスクロール、ズーム初期化はホイールクリック、パン（移動）は右クリックを押し続けた状態でカーソルを移動します。
+
+<PictureGallery data={['/media/images/0011/0008.gif']} border />
+
+　画面の操作については漏れなくキーボードからも行えます。マウスと併せて、操作内容については以下の通りです。
+
+<table>
+    <thead>
+        <tr>
+            <th>キーボード</th>
+            <th>マウス</th>
+            <th>コマンド</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>`[W]` `[A]` `[S]` `[D]`</td>
+            <td>`[Right Button]` + `[Pad]`</td>
+            <td>画面をパン（移動）します。</td>
+        </tr>
+        <tr>
+            <td>`[Q]` `[W]`</td>
+            <td>`[Scroll]`</td>
+            <td>画面をズーム（拡大・縮小）します。</td>
+        </tr>
+        <tr>
+            <td>`[-]`</td>
+            <td>`[Middle Button]`</td>
+            <td>ズーム（拡大・縮小）を初期化します。</td>
+        </tr>
+        <tr>
+            <td>`[F]`</td>
+            <td></td>
+            <td>試合が表示されているディスプレイにて、次の対戦を表示します。</td>
+        </tr>
+    </tbody>
+</table>
+
+### 終了
+
+　タスクバーからウィンドウを閉じるか、`[Alt]` + `[F4]`でソフトウェアを終了してください。要望があれば終了するためのコマンドを実装します。
+
+## 推奨環境
+
+　インテル® Celeron® N4120のような省電力CPU／GPUでも60FPS程度は出たので大丈夫だと思いますが、推奨する動作環境を以下に記しておきます。
+
+<table>
+    <thead>
+        <tr>
+            <th>項目</th>
+            <th>推奨性能</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>OS</td>
+            <td>Windows 7以上</td>
+        </tr>
+        <tr>
+            <td>CPU</td>
+            <td>第4世代／インテル® Core™ i3以上</td>
+        </tr>
+        <tr>
+            <td>GPU</td>
+            <td>NVIDIA GeForce® GTX 980以上</td>
+        </tr>
+        <tr>
+            <td>RAM</td>
+            <td>2GB以上</td>
+        </tr>
+        <tr>
+            <td>ROM</td>
+            <td>100MB以上</td>
+        </tr>
+    </tbody>
+</table>
+
+## 要望について
+
+　改善点や実装してほしい機能などがありましたら、<Link href='https://github.com/indFunction/PlayOnDisplay/issues'>GitHub Issues</Link>から投稿をお願いします。GitHubアカウントを所持できないなどの事情がある場合は、<Link href='/contact'>お問い合わせ</Link>からお願いします。
+
+## クレジット
+
+- 著作物
+    - Created by **独立定義虚構関数**
+    - Powered by <Link href='https://unity.com/'>Unity</Link>
+        - Using <Link href='https://github.com/gkngkc/UnityStandaloneFileBrowser'>StandaloneFileBrowser</Link>
+        - Using **TextMesh Pro**
+    - Font
+        - Using **メイリオ**
+- 制作環境
+    - Made with <Link href='https://unity.com/'>Unity</Link>
+    - Code Edit with <Link href='https://azure.microsoft.com/ja-jp/products/visual-studio-code/'>Visual Studio Code</Link>
+    - Graphic Edit with <Link href='https://www.gimp.org/'>GIMP</Link>, <Link href='https://www.blender.org/'>Blender</Link>
+    - Screen Record with <Link href='https://www.screentogif.com/'>ScreenToGif</Link>
+
+## 関連リンク
+
+- <Link href='https://github.com/indFunction/PlayOnDisplay/releases/download/0.1.0/Play_on_Display_0.1.0.zip'>Play on Display 0.1.0 (ダウンロード)</Link>
+- <Link href='https://github.com/indFunction/PlayOnDisplay'>GitHub - indFunction / PlayOnDisplay</Link>
