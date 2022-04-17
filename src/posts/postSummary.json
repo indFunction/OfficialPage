@@ -1,5 +1,15 @@
 [
     {
+        "path": "0013",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/general/terminal.png",
+        "title": "Reactが使える環境を3分で構築する",
+        "description": "フレームワークを1ミリだけ理解した私が、手順を纏めてみました。",
+        "date": [2022, 4, 17],
+        "category": "memo",
+        "keywords": ["yarn", "フレームワーク", "React", "Next.js", "TypeScript", "モジュール", "拡張機能", "styled-components", "ESLint", "Prettier"]
+    },
+    {
         "path": "0012",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/general/terminal.png",
