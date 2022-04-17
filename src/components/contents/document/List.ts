@@ -57,6 +57,10 @@ export const List = css`
             :before {
                 display: none;
             }
+
+            ::marker {
+                font-weight: 800;
+            }
         }
     }
 `;
