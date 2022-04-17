@@ -1,0 +1,288 @@
+---
+thumbnail: '/media/thumbnails/general/terminal.png'
+title: 'Reactが使える環境を3分で構築する'
+description: 'フレームワークを1ミリだけ理解した私が、手順を纏めてみました。'
+date: [2022, 4, 17]
+category: 'memo'
+keywords: ['yarn', 'フレームワーク', 'React', 'Next.js', 'TypeScript', 'モジュール', '拡張機能', 'styled-components', 'ESLint', 'Prettier']
+---
+
+　何気なく本ウェブサイトをReactで作成した私ですが、実を言えばフレームワーク＝？？？という状態で運営を行っています。数学という学問にも「数学を理解する者」と「数学を取り扱う者」の二者が存在するのですが、まさに私は後者のような「動くからヨシ！」という悪しきライトシンカーであります。
+
+　そして、普段から利用するリットルの定義を忘れるはずがない一方で日常生活と全く関わりのないヘクタールの定義を忘れるように、人間は理解していないもの／馴染みのないものをすぐに忘れます。それはReactの新しいプロジェクトを作成する場合に於いても同じことなので、今後、忘れた際に困ることがないよう備忘録として纏めておきます。
+
+## 環境・プロジェクトの構築
+
+　Reactを動作させるための前提条件、及びプロジェクトを作成する手順を以下に記します。これ以外にも様々な方法があるらしいので、環境の制限や動かない場合は必要に応じて方法を変えましょう。
+
+<br />
+
+1. <Link href='https://azure.microsoft.com/ja-jp/products/visual-studio-code/'>Visual Studio Code</Link>をインストールします。既にインストールされている場合や、他のIDEを使用する場合は割愛します。
+
+<br />
+
+2. <Link href='https://nodejs.org/ja/'>Node.js</Link>をインストールします。既にインストールされている場合や、他の実行環境を使用する場合は割愛します。
+
+<br />
+
+3. <Link href='https://git-scm.com/'>Git</Link>をインストールします。環境にWSLが導入されている場合は割愛します。
+
+<br />
+
+4. **yarn**を（コンソールから）インストールします。インストールが完了したら確認も行いましょう。
+
+<Code type='Bash'>
+&#036; npm install --global yarn
+&#036; yarn -v
+</Code>
+
+<br />
+
+5. 新規プロジェクトを作成します。しばらくするとプロジェクト名が要求されるので、適当な名前を付けましょう。
+
+<Code type='Bash'>
+&#036; yarn create --typescript next-app
+</Code>
+
+<br />
+
+6. 処理が完了したら、生成されたファイルに移動します。コンソール上から移動するのが面倒であれば、Visual Studio Codeを生成されたファイルから起動しても構いません。
+
+<Code type='Bash'>
+&#036; cd <ST type={['yellow_tc']}>&lt;プロジェクト名&gt;</ST>
+</Code>
+
+<br />
+
+7. サーバーを起動します。デフォルトの場合、<Link href='http://localhost:3000/'>http://localhost:3000/</Link>が表示されていればOKです。
+
+<Code type='Bash'>
+&#036; yarn dev
+</Code>
+
+<br />
+
+8. あとは煮るなり焼くなり、好きにしましょう。
+
+## モジュール／拡張機能のインストール・設定
+
+　プロジェクトを効率的に、快適に進めるために必要な最低限のモジュールの導入と設定を以下に記します。面倒なことがあれば全てモジュールが解決してくれます。
+
+### styled-components
+
+　JSX／TSXファイル内に直接CSSを書くことが可能になります。特に、コンポーネントに沿って部品を作る場合やアトミックデザインを重視するのであれば必須です。
+
+<br />
+
+1. **styled-components**を（コンソールから）インストールします。
+
+<Code type='Bash'>
+&#036; yarn add styled-components
+&#036; yarn add --dev @types/styled-components
+</Code>
+
+<br />
+
+2. `/next.config.js`に設定を記述します。これにより、styled-componentsが認識されます。
+
+<Code type='/next.config.js'>
+{`const nextConfig = {
+    compiler: {
+        styledComponents: true
+    }
+};`}
+</Code>
+
+<br />
+
+3. Visual Studio Codeに拡張機能：<Link href='https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components'>vscode-styled-components</Link>をインストールします。これにより、styled-componentsで記述したコードがVisual Studio Code内でCSSとして認識されます。
+
+<br />
+
+4. styled-componentsで記述したコードに色が付いていれば完了です。
+
+### Visual Studio IntelliCode
+
+　入力に対する候補を選定し、自動でインポートしてくれます。これがなければ、かなり効率が下がるでしょう。
+
+<br />
+
+1. Visual Studio Codeに拡張機能：<Link href='https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode'>Visual Studio IntelliCode</Link>をインストールします。
+
+<br />
+
+2. モジュールやコンポーネントを使用する際に候補が表示されていれば完了です。
+
+### ESLint
+
+　構文を確認し、修正するべき箇所を教えてくれます。ESLintは（Next.js 11以上では）標準で搭載されているので、それぐらいに重要な機能かもしれません。
+
+<br />
+
+1. Visual Studio Codeに拡張機能：<Link href='https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint'>ESLint</Link>をインストールします。
+
+<br />
+
+2. よく分らんやつを（コンソールから）インストールします。仕組みは謎です。
+
+<Code type='Bash'>
+&#036; yarn add --dev eslint-plugin-prettier
+&#036; yarn add --dev eslint-config-prettier
+&#036; yarn add --dev typescript @typescript-eslint/eslint-plugin
+</Code>
+
+<br />
+
+3. `/.eslintrc.json`に設定を記述します。この場合、「文末にセミコロンを付ける」というルールを設定しています。
+
+<Code type='/.eslintrc.json'>
+{`{
+    "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "next/core-web-vitals"
+    ],
+    "rules": {
+        "semi": ["error", "always"]
+    }
+}`}
+</Code>
+
+<br />
+
+4. `/package.json`にスクリプトを記述します。これにより、`$ yarn fix`でフォーマットを行うことができます。
+
+<Code type='/package.json'>
+{`{
+    "scripts": {
+        "fix": "yarn lint --fix"
+    }
+}`}
+</Code>
+
+<br />
+
+5. `/.vscode/settings.json`に設定を記述します。これにより、ワークスペース内ではファイル保存時に自動フォーマットが行われます。
+
+<Code type='/.vscode/settings.json'>
+{`{
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    }
+}`}
+</Code>
+
+<br />
+
+6. おまけ①：2行以上の重複したインポートを行わないように設定します。
+
+<Code type='/.eslintrc.json'>
+{`{
+    "extends": [
+        "eslint:recommended",
+        "plugin:prettier/recommended"
+    ],
+    "rules": {
+        "@typescript-eslint/no-duplicate-imports": ["error"]
+    }
+}`}
+</Code>
+
+<br />
+
+7. おまけ②：モジュールをインポートする順番がアルファベット順になるように設定します。
+
+<Code type='/.eslintrc.json'>
+{`{
+    "extends": [
+        "plugin:import/recommended",
+        "plugin:import/warnings"
+    ],
+    "rules": {
+        "import/order": [
+            "error",
+            {
+                "alphabetize": {
+                    "order": "asc"
+                }
+            }
+        ]
+    }
+}`}
+</Code>
+
+<br />
+
+8. エラー箇所に波線や警告が表示されていれば完了です。
+
+### Prettier
+
+　コードを整形してくれます。どれだけ人間がフォーマット順守でコードを丁寧に組み立てようと必ず何かしらのミスを犯すので、機械に任せてしまうのが一番です。
+
+<br />
+
+1. Visual Studio Codeに拡張機能：<Link href='https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode'>Prettier</Link>をインストールします。
+
+<br />
+
+2. **Prettier**を（コンソールから）インストールします。
+
+<Code type='Bash'>
+&#036; yarn add --dev prettier
+</Code>
+
+<br />
+
+3. `/.eslintrc.json`に設定を記述します。これにより、ESLintとPrettierの機能が競合する事態を防ぎます。
+
+<Code type='/.eslintrc.json'>
+{`{
+    "extends": [
+        "prettier"
+    ]
+}`}
+</Code>
+
+<br />
+
+4. `/package.json`にコマンドを記述します。これにより、`$ yarn format`でコードを整形することができます。
+
+<Code type='/package.json'>
+{`{
+    "scripts": {
+        "format": "prettier --write --ignore-path .gitignore ."
+    }
+}`}
+</Code>
+
+<br />
+
+5. `/package.json`に設定を記述します。インターネット上の記事を参考に、自分好みの設定を行いましょう。
+
+<Code type='/package.json'>
+{`{
+    "prettier": {
+        "tabWidth": 4,
+        "printWidth": 160,
+        "trailingComma": "none",
+        "semi": true,
+        "singleQuote": true,
+        "jsxSingleQuote": true
+    }
+}`}
+</Code>
+
+<br />
+
+6. `/.vscode/settings.json`に設定を記述します。これにより、ワークスペース内ではファイル保存時に自動フォーマットが行われます。
+
+<Code type='/.vscode/settings.json'>
+{`{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+}`}
+</Code>
+
+<br />
+
+7. ファイル保存時にコードが整形されていれば完了です。
