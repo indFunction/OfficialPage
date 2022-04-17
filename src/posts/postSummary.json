@@ -1,5 +1,15 @@
 [
     {
+        "path": "0012",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/general/terminal.png",
+        "title": "Gitでコミットを上書きする",
+        "description": "以前のコミットや歴史を上書きする方法を紹介します。",
+        "date": [2022, 4, 17],
+        "category": "memo",
+        "keywords": ["Git", "コミット", "ログ", "リセット", "リベース", "上書き", "改変"]
+    },
+    {
         "path": "0011",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/0011.png",
