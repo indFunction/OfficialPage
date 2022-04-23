@@ -1,5 +1,15 @@
 [
     {
+        "path": "0015",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/general/terminal.png",
+        "title": "Gitをプロキシー環境で使用する",
+        "description": "プロキシーを経由してGitを使用する方法を紹介します。",
+        "date": [2022, 4, 23],
+        "category": "memo",
+        "keywords": ["Git", "プロキシー", "Proxy", "コンフィグ", "設定", "接続", "切断"]
+    },
+    {
         "path": "0014",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/0014.png",
