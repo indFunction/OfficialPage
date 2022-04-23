@@ -1,0 +1,30 @@
+---
+thumbnail: '/media/thumbnails/general/terminal.png'
+title: 'Gitをプロキシー環境で使用する'
+description: 'プロキシーを経由してGitを使用する方法を紹介します。'
+date: [2022, 4, 23]
+category: 'memo'
+keywords: ['Git', 'プロキシー', 'Proxy', 'コンフィグ', '設定', '接続', '切断']
+---
+
+　大学や現場からGitを操作するとき、もしくは特殊な場所にGitサーバー（リポジトリー）がある場合は、プロキシーを経由しなければなりません。その場合は、以下のコマンドでプロキシーを設定します。
+
+<Code type='Bash'>
+&#036; git config --global http.proxy http://<ST type={['yellow_tc']}>&lt;プロキシーアドレス&gt;</ST>:<ST type={['yellow_tc']}>&lt;ポート番号&gt;</ST>
+</Code>
+
+<br />
+
+　続いて、設定を確認しましょう。以下のコマンドの結果に含まれる`http.proxy`が指定したアドレスであれば成功です。
+
+<Code type='Bash'>
+&#036; git config --global -l
+</Code>
+
+<br />
+
+　プロキシーの設定を元に戻す（削除する）場合は、以下のコマンドを実行します。コンフィグから`http.proxy`の項目が消えていれば成功です。
+
+<Code type='Bash'>
+&#036; git config --global --unset http.proxy
+</Code>
