@@ -2,7 +2,6 @@ import { MDXRemoteSerializeResult } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 import typeMeta from '../types/PageMeta';
 import fs from 'node:fs/promises';
-import { resolve, dirname } from 'node:path';
 
 type Source = MDXRemoteSerializeResult<typeMeta>;
 
@@ -11,11 +10,8 @@ type PostIndexProps = {
     isPublish: boolean;
 };
 
-const dir = dirname(new URL(import.meta.url).pathname);
-const basePath = resolve(dir, '../posts');
-
 void (async () => {
-    const postIndex = (await fs.readFile(resolve(basePath, 'postIndex.json'), 'utf8').then(JSON.parse)) as PostIndexProps[];
+    const postIndex = (await fs.readFile(new URL('../posts/postIndex.json', import.meta.url), 'utf8').then(JSON.parse)) as PostIndexProps[];
     if (!postIndex) {
         throw new Error('PostIndexの取得に失敗しました');
     }
@@ -26,7 +22,7 @@ void (async () => {
 
     const data = await Promise.all(
         postData.map(async (postData) => {
-            const mdx = await fs.readFile(resolve(basePath, `${postData.path}.mdx`), 'utf8');
+            const mdx = await fs.readFile(new URL(`../posts/${postData.path}.mdx`, import.meta.url), 'utf8');
             const mdxSource = (await serialize(mdx, { parseFrontmatter: true })) as unknown as Source;
             const mdxMeta = mdxSource.frontmatter;
 
@@ -36,7 +32,7 @@ void (async () => {
         })
     );
 
-    await fs.writeFile(resolve(basePath, 'postSummary.json'), JSON.stringify(data, null, 4));
+    await fs.writeFile(new URL('../posts/postSummary.json', import.meta.url), JSON.stringify(data, null, 4));
 
     console.log('PostSummaryを生成しました');
 })();
