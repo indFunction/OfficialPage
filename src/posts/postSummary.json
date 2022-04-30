@@ -53,7 +53,7 @@
         "path": "0010",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/general/bookmark.png",
-        "title": "個人的なブックマーク；解説系YouTubeチャンネル",
+        "title": "個人的なブックマーク；解説系チャンネル",
         "description": "個人的に気に入っているコンテンツを紹介します。",
         "date": [2022, 4, 13],
         "category": "memo",
@@ -87,7 +87,7 @@
         "description": "新しい世界が始まります。",
         "date": [2022, 4, 6],
         "category": "blog",
-        "keywords": ["ウェブサイト", "ホームページ", "React", "Next"]
+        "keywords": ["ウェブサイト", "ホームページ", "React", "Next", "TypeScript"]
     },
     {
         "path": "0006",
