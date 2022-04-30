@@ -12,7 +12,7 @@
         "lint": "next lint",
         "format": "prettier --write --ignore-path .gitignore --ignore-path .prettierignore .",
         "formal": "yarn lint --fix",
-        "generate-index": "ts-node --esm ./src/scripts/GeneratePostSummary.ts"
+        "gen-ps": "ts-node --esm ./src/scripts/GeneratePostSummary.ts"
     },
     "dependencies": {
         "@mdx-js/loader": "^2.1.0",
