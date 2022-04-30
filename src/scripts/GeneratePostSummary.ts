@@ -14,12 +14,10 @@ type PostIndexProps = {
 const dir = dirname(new URL(import.meta.url).pathname);
 const basePath = resolve(dir, '../posts');
 
-console.log(basePath);
-
 void (async () => {
     const postIndex = (await fs.readFile(resolve(basePath, 'postIndex.json'), 'utf8').then(JSON.parse)) as PostIndexProps[];
     if (!postIndex) {
-        throw new Error('postIndex failed');
+        throw new Error('PostIndexの取得に失敗しました');
     }
 
     console.log('PostIndexに含まれるデータを取得しています');
@@ -32,13 +30,15 @@ void (async () => {
             const mdxSource = (await serialize(mdx, { parseFrontmatter: true })) as unknown as Source;
             const mdxMeta = mdxSource.frontmatter;
 
+            console.log(`記事${mdxMeta.path}のメタデータを取得しました`);
+
             return { ...postData, ...mdxMeta };
         })
     );
 
     await fs.writeFile(resolve(basePath, 'postSummary.json'), JSON.stringify(data, null, 4));
 
-    console.log('とりあえずおｋ');
+    console.log('PostSummaryを生成しました');
 })();
 
 export default {};
