@@ -26,7 +26,7 @@ void (async () => {
             const mdxSource = (await serialize(mdx, { parseFrontmatter: true })) as unknown as Source;
             const mdxMeta = mdxSource.frontmatter;
 
-            console.log(`記事${mdxMeta.path}のメタデータを取得しました`);
+            console.log(`記事${postData.path}のメタデータを取得しました`);
 
             return { ...postData, ...mdxMeta };
         })
