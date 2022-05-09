@@ -1,3 +1,4 @@
+import { MathJax } from 'better-react-mathjax';
 import type { NextPage } from 'next';
 import { Fragment } from 'react';
 import { Body } from 'components/common/Body';
@@ -158,6 +159,12 @@ const Index: NextPage = () => {
                         <br />
                         <span className='fs8'>The quick brown fox jumps over the lazy dog</span>
                     </p>
+                    <p>
+                        <MathJax>{'マンデルブロ集合の定義は\\(\\begin{cases} Z_{n + 1} = z_{n}^{2} + c \\\\ Z_{n} = 0 \\end{cases}\\)である。'}</MathJax>
+                    </p>
+                    <p>
+                        <MathJax>{'黄金比は\\(1 : \\dfrac{1 + \\sqrt{5}}{2}\\)である。'}</MathJax>
+                    </p>
 
                     <h2>ブロック</h2>
 
@@ -246,6 +253,19 @@ float CorrectPositiveAngle(float val)
                         いろはにほへとちりぬるを
                         <br />
                         The quick brown fox jumps over the lazy dog
+                    </div>
+
+                    <div className='math'>
+                        <MathJax>
+                            {`
+                                \\begin{eqnarray}
+                                    (21.75)_{10}
+                                    &=& 16 + 4 + 1 + 0.5 + 0.25 \\\\
+                                    &=& 2^{4} + 2^{2} + 2^{1} + 2^{-1} + 2^{-2} \\\\
+                                    &=& (10101.11)_{2}
+                                \\end{eqnarray}
+                            `}
+                        </MathJax>
                     </div>
 
                     <h2>テーブル・リスト</h2>

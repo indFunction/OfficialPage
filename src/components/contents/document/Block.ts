@@ -1,4 +1,5 @@
 import { css } from 'styled-components';
+import { DefaultItem } from 'components/contents/document/DefaultItem';
 
 const DefaultBlock = css`
     position: relative;
@@ -110,5 +111,10 @@ export const Block = css`
             font-size: 48px;
             color: blue;
         }
+    }
+    .math {
+        ${DefaultItem}
+
+        overflow-x: auto;
     }
 `;
