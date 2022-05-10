@@ -2,6 +2,7 @@
 import { MDXRemoteSerializeResult } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 import rehypeMathJaxSvg from 'rehype-mathjax';
+import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 
 export const convertMDX = async (mdxText: string): Promise<MDXRemoteSerializeResult> => {
@@ -20,7 +21,7 @@ export const convertMDX = async (mdxText: string): Promise<MDXRemoteSerializeRes
 
     const mdxSource = await serialize(formatted, {
         mdxOptions: {
-            remarkPlugins: [remarkMath],
+            remarkPlugins: [remarkGfm, remarkMath],
             rehypePlugins: [rehypeMathJaxSvg]
         },
         parseFrontmatter: true
