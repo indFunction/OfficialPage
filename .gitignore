@@ -39,3 +39,4 @@ yarn-error.log*
 
 # custom
 public/media/images/**/raw
+public/media/thumbnails/raw

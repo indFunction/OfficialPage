@@ -1,5 +1,15 @@
 [
     {
+        "path": "0017",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/0017.png",
+        "title": "CPUの性能評価",
+        "description": "CPUに関連する要素からCPUの性能を評価する方法を簡単に纏めてみました。",
+        "date": [2022, 5, 11],
+        "category": "explanation",
+        "keywords": ["CPU", "コンピューター", "システム", "基本情報技術", "計算", "評価", "クロック", "実行命令", "CPI", "CPU時間", "MIPS"]
+    },
+    {
         "path": "0016",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/general/diary.png",
