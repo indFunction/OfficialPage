@@ -1,0 +1,49 @@
+.document .informationCard:first-child {
+    margin-top: 0;
+}
+.document .informationCard:last-child {
+    margin-bottom: 0;
+}
+
+.document .informationCard {
+    margin: 16px 0;
+    padding: 8px;
+    border: solid 1px var(--document_use);
+}
+
+.document .informationCard > .head {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.document .informationCard > .head > .icon > img {
+    object-fit: cover;
+    width: 64px;
+    height: 64px;
+    margin-right: 16px;
+}
+
+.document .informationCard > .head > div > .mainTitle {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.document .informationCard > .head > div > .subTitle {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--document_half);
+}
+.document .informationCard > .head > div > .subTitle a {
+    word-break: break-all;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+
+.document .informationCard > .main {
+    margin: 8px;
+}

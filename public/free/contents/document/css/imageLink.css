@@ -1,0 +1,51 @@
+.document .imageLink:first-child {
+    margin-top: 0;
+}
+.document .imageLink:last-child {
+    margin-bottom: 0;
+}
+
+.document .imageLink {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    margin: 16px 0;
+    padding-bottom: 56.25%;
+    border-bottom: none;
+    transition: 0;
+}
+.document .imageLink:hover {
+    border-bottom: none;
+    transition: 0;
+}
+.document .imageLink img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: none;
+}
+
+.document .imageLink > .explanation {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffffffff;
+    background-color: #00000080;
+    opacity: 0;
+    transition: 0.25s;
+}
+.document .imageLink > .explanation:hover {
+    opacity: 1;
+    transition: 0.25s;
+}

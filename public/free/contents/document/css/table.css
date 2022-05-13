@@ -1,0 +1,62 @@
+.document table:first-child {
+    margin-top: 0;
+}
+.document table:last-child {
+    margin-bottom: 0;
+}
+
+.document table {
+    border-collapse: collapse;
+    margin: 16px 0;
+    color: var(--document_use);
+}
+
+.document table thead {
+    border-bottom: double 3px var(--document_use);
+}
+
+.document table th {
+    margin: 0;
+    padding: 4px;
+    text-align: left;
+    vertical-align: top;
+    font-weight: 600;
+    border: solid 1px var(--document_use);
+}
+
+.document table td {
+    margin: 0;
+    padding: 4px;
+    text-align: left;
+    vertical-align: top;
+    font-weight: 500;
+    border: solid 1px var(--document_use);
+}
+
+.document table .nowrap {
+    white-space: nowrap;
+}
+
+.document table .textLeft {
+    text-align: left;
+}
+
+.document table .textCenter {
+    text-align: center;
+}
+
+.document table .textRight {
+    text-align: right;
+}
+
+.document table .verticalTop {
+    vertical-align: top;
+}
+
+.document table .verticalMiddle {
+    vertical-align: middle;
+}
+
+.document table .verticalBottom {
+    vertical-align: bottom;
+}

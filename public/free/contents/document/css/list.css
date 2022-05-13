@@ -1,0 +1,59 @@
+.document ul:first-child,
+.document ol:first-child {
+    margin-top: 0;
+}
+.document ul:last-child,
+.document ol:last-child {
+    margin-bottom: 0;
+}
+
+.document ul ul,
+.document ol ul {
+    margin: 4px 0 4px 16px;
+}
+
+.document ul ol,
+.document ol ol {
+    margin: 4px 0 4px 16px;
+}
+
+.document ul li,
+.document ol li {
+    margin: 4px 0;
+}
+.document ul li:first-of-type,
+.document ol li:first-of-type {
+    margin-top: 0;
+}
+.document ul li:last-of-type,
+.document ol li:last-of-type {
+    margin-bottom: 0;
+}
+
+.document ul {
+    list-style-type: none !important;
+    margin: 16px 0 16px 16px;
+    padding: 0;
+}
+.document ul li:before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-bottom: 4px;
+    margin-left: -12px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: var(--document_use);
+}
+
+.document ol {
+    margin: 16px 0 16px 16px;
+    padding: 0;
+}
+.document ol li:before {
+    display: none;
+}
+.document ol li::marker {
+    font-weight: 800;
+}

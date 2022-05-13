@@ -1,0 +1,113 @@
+.document b {
+    font-weight: 800;
+}
+.document i {
+    font-weight: 500;
+}
+.document s {
+    color: var(--document_half);
+}
+.document a {
+    font-weight: 600;
+    color: var(--document_link);
+    border-bottom: solid 1px transparent;
+    transition: 0.25s;
+}
+.document a:hover {
+    border-bottom: solid 1px var(--document_link);
+    transition: 0.25s;
+}
+.document q {
+    font-weight: 600;
+    color: var(--document_half);
+}
+.document q:before {
+    content: "“";
+    margin-right: 2px;
+    font-weight: 800;
+    color: var(--document_half);
+}
+.document q:after {
+    content: "”";
+    margin-left: 2px;
+    font-weight: 800;
+    color: var(--document_half);
+}
+.document code {
+    padding: 2px;
+    font-size: 14px;
+    color: var(--document_base);
+    background-color: var(--document_use);
+}
+
+.document .fs32 {
+    font-size: 32px;
+}
+.document .fs24 {
+    font-size: 24px;
+}
+.document .fs16 {
+    font-size: 16px;
+}
+.document .fs12 {
+    font-size: 12px;
+}
+.document .fs8 {
+    font-size: 8px;
+}
+
+.document .red_tc {
+    color: red;
+}
+.document .orange_tc {
+    color: orange;
+}
+.document .yellow_tc {
+    color: yellow;
+}
+.document .lime_tc {
+    color: lime;
+}
+.document .green_tc {
+    color: green;
+}
+.document .aqua_tc {
+    color: aqua;
+}
+.document .blue_tc {
+    color: blue;
+}
+.document .purple_tc {
+    color: purple;
+}
+.document .gray_tc {
+    color: gray;
+}
+
+.document .red_bc {
+    background-color: red;
+}
+.document .orange_bc {
+    background-color: orange;
+}
+.document .yellow_bc {
+    background-color: yellow;
+}
+.document .lime_bc {
+    background-color: lime;
+}
+.document .green_bc {
+    background-color: green;
+}
+.document .aqua_bc {
+    background-color: aqua;
+}
+.document .blue_bc {
+    background-color: blue;
+}
+.document .purple_bc {
+    background-color: purple;
+}
+.document .gray_bc {
+    background-color: gray;
+}

@@ -1,0 +1,121 @@
+.document blockquote,
+.document .code,
+.document .warning,
+.document .example,
+.document .point {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 32px 0 16px 0;
+    padding: 16px 8px 8px 8px;
+}
+.document blockquote:before,
+.document .code:before,
+.document .warning:before,
+.document .example:before,
+.document .point:before {
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+.document blockquote:first-child,
+.document .code:first-child,
+.document .warning:first-child,
+.document .example:first-child,
+.document .point:first-child {
+    margin-top: 16px;
+}
+.document blockquote:last-child,
+.document .code:last-child,
+.document .warning:last-child,
+.document .example:last-child,
+.document .point:last-child {
+    margin-bottom: 0;
+}
+
+.document .math:first-child {
+    margin-top: 0;
+}
+.document .math:last-child {
+    margin-bottom: 0;
+}
+
+.document blockquote {
+    border: solid 1px var(--document_half);
+    color: var(--document_half);
+}
+.document blockquote:before {
+    content: "”";
+    top: -24px;
+    left: 4px;
+    font-size: 64px;
+    color: var(--document_half);
+}
+
+.document .code {
+    padding: 0;
+    border: solid 1px var(--document_use);
+    color: var(--document_base);
+    background-color: var(--document_use);
+}
+.document .code pre {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    max-height: 320px;
+    margin: 0;
+    padding: 16px 8px 8px 8px;
+}
+.document .code .codeType {
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    padding: 0 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--document_base);
+    background-color: var(--document_half);
+}
+
+.document .warning {
+    border: solid 1px var(--document_block_warning);
+    color: var(--document_block_warning);
+}
+.document .warning:before {
+    content: "!";
+    top: -16px;
+    left: 12px;
+    font-size: 32px;
+    color: var(--document_block_warning);
+}
+
+.document .example {
+    border: solid 1px var(--document_block_example);
+    color: var(--document_block_example);
+}
+.document .example:before {
+    content: "ex.";
+    top: -20px;
+    left: 10px;
+    font-size: 32px;
+    color: var(--document_block_example);
+}
+
+.document .point {
+    border: solid 1px var(--document_block_point);
+    color: var(--document_block_point);
+}
+.document .point:before {
+    content: "*";
+    top: -22px;
+    left: 8px;
+    font-size: 48px;
+    color: var(--document_block_point);
+}
+.document .math {
+    overflow-x: auto;
+}

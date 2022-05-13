@@ -1,0 +1,72 @@
+.document .pictureGallery:first-child {
+    margin-top: 0;
+}
+.document .pictureGallery:last-child {
+    margin-bottom: 0;
+}
+
+.document .pictureGallery {
+    margin: 16px 0;
+}
+
+.document .pictureGallery > .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+}
+
+.document .pictureGallery > .container > .slideContainer {
+    display: flex;
+}
+
+.document .pictureGallery > .container > .slideContainer > button {
+    width: 32px;
+    height: calc(100% - 8px);
+    margin: 4px;
+    padding: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--document_base);
+    background-color: var(--document_use);
+    transition-property: color, background-color;
+    transition: 0.25s;
+}
+.document .pictureGallery > .container > .slideContainer > button:hover {
+    background-color: var(--document_half);
+    transition-property: color, background-color;
+    transition: 0.25s;
+}
+
+.document .pictureGallery > .container .singlePictureContainer,
+.document .pictureGallery > .container .multiPictureContainer {
+    display: block;
+    margin: 4px;
+    border-bottom: none;
+    transition: 0;
+}
+.document .pictureGallery > .container .singlePictureContainer:hover,
+.document .pictureGallery > .container .multiPictureContainer:hover {
+    border-bottom: none;
+    transition: 0;
+}
+
+.document .pictureGallery > .container .singlePictureContainer {
+    width: calc(100% - 8px);
+}
+
+.document .pictureGallery > .container .multiPictureContainer {
+    width: calc(50% - 8px);
+}
+
+.document .pictureGallery > .container .picture {
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.document .pictureGallery > .container .border {
+    padding: 1px;
+    border: solid 1px var(--document_half);
+}

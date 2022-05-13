@@ -1,0 +1,38 @@
+:root {
+    --document_base: #fff;
+    --document_half: #888;
+    --document_use: #000;
+    --document_link: #88f;
+    --document_block_warning: red;
+    --document_block_example: green;
+    --document_block_point: blue;
+}
+
+.document * {
+    box-sizing: border-box;
+}
+
+.document a {
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+}
+.document button {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+    appearance: none;
+    color: inherit;
+    background-color: transparent;
+}

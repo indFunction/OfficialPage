@@ -1,0 +1,52 @@
+.document h1:first-child,
+.document h2:first-child,
+.document h3:first-child {
+    margin-top: 0;
+}
+.document h1:last-child,
+.document h2:last-child,
+.document h3:last-child {
+    margin-bottom: 0;
+}
+
+.document h1 {
+    margin: 64px 0 16px;
+    padding: 0;
+    font-weight: 800;
+    font-size: 32px;
+}
+.document h2 {
+    margin: 64px 0 16px;
+    padding: 0;
+    font-weight: 800;
+    font-size: 28px;
+    border-bottom: solid 2px var(--document_half);
+}
+.document h3 {
+    margin: 64px 0 16px;
+    padding: 0 0 0 8px;
+    font-weight: 800;
+    font-size: 24px;
+    border-left: solid 8px var(--document_half);
+}
+.document h4 {
+    margin: 16px 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+.document h5 {
+    margin: 16px 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+.document h6 {
+    margin: 16px 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 12px;
+}
+.document .joinHeading {
+    margin-top: 16px;
+}

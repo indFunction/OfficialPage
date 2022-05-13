@@ -1,0 +1,19 @@
+.document p:first-child {
+    margin-top: 0;
+}
+.document p:last-child {
+    margin-bottom: 0;
+}
+
+.document p {
+    margin: 16px 0;
+    padding: 0;
+}
+
+.document .gothic {
+    font-family: sans-serif;
+}
+
+.document .serif {
+    font-family: serif;
+}
