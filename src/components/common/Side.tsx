@@ -53,6 +53,10 @@ const Base = styled.div`
         margin: 0;
         padding: 0;
     }
+
+    @media print {
+        display: none;
+    }
 `;
 
 const Container = styled.div<SideProps>`
