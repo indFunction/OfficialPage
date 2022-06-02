@@ -81,20 +81,20 @@ const Button = styled.div<MenuPropsB>`
         :nth-of-type(1) {
             top: ${({ menu }) => (menu ? 18 : 10)}px;
             left: calc(8px - 1px);
-            rotate: ${({ menu }) => (menu ? 135 : 0)}deg;
+            transform: rotate(${({ menu }) => (menu ? 135 : 0)}deg);
         }
 
         :nth-of-type(2) {
             top: 18px;
             left: calc(8px - 1px);
-            rotate: ${({ menu }) => (menu ? 180 : 0)}deg;
+            transform: rotate(${({ menu }) => (menu ? 180 : 0)}deg);
             opacity: ${({ menu }) => (menu ? 0 : 1)};
         }
 
         :nth-of-type(3) {
             top: ${({ menu }) => (menu ? 18 : 26)}px;
             left: calc(8px - 1px);
-            rotate: ${({ menu }) => (menu ? 225 : 0)}deg;
+            transform: rotate(${({ menu }) => (menu ? 225 : 0)}deg);
         }
     }
 `;
