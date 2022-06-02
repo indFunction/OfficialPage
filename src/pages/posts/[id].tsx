@@ -19,7 +19,7 @@ type PostIndexProps = {
 };
 
 const Index: NextPage<IndexProps> = ({ mdxSource, id }) => {
-    console.log(generateSummaryCard(mdxSource.frontmatter, id));
+    // console.log(generateSummaryCard(mdxSource.frontmatter, id));
 
     return <PageBuilder meta={mdxSource.frontmatter} mdxSource={mdxSource} />;
 };
