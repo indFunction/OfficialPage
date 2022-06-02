@@ -1,5 +1,15 @@
 [
     {
+        "path": "0021",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/general/bookmark.png",
+        "title": "個人的なブックマーク；ウェブツール",
+        "description": "個人的に気に入っているウェブサイトを紹介します。",
+        "date": [2022, 6, 2],
+        "category": "memo",
+        "keywords": ["ブックマーク", "ウェブ", "ツール", "ユーティリティー", "テキスト", "メディア", "検索", "アップローダー", "ダウンローダー", "エディター", "ジェネレーター", "コンバーター", "プレイヤー", "チェッカー", "カルキュレーター", "サービス", "エンターテイメント"]
+    },
+    {
         "path": "0020",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/general/diary.png",
