@@ -1,5 +1,15 @@
 [
     {
+        "path": "0023",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/0023.png",
+        "title": "SDオヴィルシア；アクリルキーホルダー",
+        "description": "ノリと勢いでアクリルキーホルダーを作ってみました。",
+        "date": [2022, 6, 4],
+        "category": "illustration",
+        "keywords": ["オヴィルシア", "Orvilsia", "オリキャラ", "SDキャラ", "グッズ", "キーホルダー", "アクリル", "pixiv"]
+    },
+    {
         "path": "0022",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/general/bookmark.png",
