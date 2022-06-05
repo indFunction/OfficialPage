@@ -1,5 +1,15 @@
 [
     {
+        "path": "0024",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/0024.png",
+        "title": "金沢百万石まつり",
+        "description": "金沢では盛大なパレードが行われました。",
+        "date": [2022, 6, 5],
+        "category": "photo",
+        "keywords": ["石川県", "金沢市", "百万石まつり", "祭", "イベント", "パレード", "行列"]
+    },
+    {
         "path": "0023",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/0023.png",
