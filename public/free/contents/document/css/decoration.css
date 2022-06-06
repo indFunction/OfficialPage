@@ -1,0 +1,31 @@
+.document .topArrow,
+.document .bottomArrow,
+.document .leftArrow,
+.document .rightArrow {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+.document .topArrow {
+    border-top: solid 6px var(--document_use);
+    border-left: solid 6px transparent;
+    border-right: solid 6px transparent;
+}
+.document .bottomArrow {
+    border-bottom: solid 6px var(--document_use);
+    border-left: solid 6px transparent;
+    border-right: solid 6px transparent;
+}
+.document .leftArrow {
+    border-top: solid 6px transparent;
+    border-bottom: solid 6px transparent;
+    border-right: solid 6px var(--document_use);
+}
+.document .rightArrow {
+    border-top: solid 6px transparent;
+    border-bottom: solid 6px transparent;
+    border-left: solid 6px var(--document_use);
+}

@@ -165,6 +165,15 @@ const Index: NextPage = () => {
                     <p>
                         <MathJax>{'黄金比は\\(1 : \\dfrac{1 + \\sqrt{5}}{2}\\)である。'}</MathJax>
                     </p>
+                    <p>
+                        menu<span className='topArrow'></span>open
+                        <br />
+                        menu<span className='bottomArrow'></span>close
+                        <br />
+                        free<span className='leftArrow'></span>contents<span className='leftArrow'></span>document
+                        <br />
+                        free<span className='rightArrow'></span>contents<span className='rightArrow'></span>document
+                    </p>
 
                     <h2>ブロック</h2>
 
@@ -412,6 +421,12 @@ float CorrectPositiveAngle(float val)
                         src='https://raw.githubusercontent.com/indFunction/GetUnityInputCode/main/media/hero.png'
                         ratio={56.25}
                     />
+
+                    <h3>インラインフレーム (例：Google Map 埋め込み)</h3>
+
+                    <div className='screenFrame'>
+                        <iframe src='https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6481.255405981119!2d139.75006087774716!3d35.686168035009054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z55qH5bGF!5e0!3m2!1sja!2sjp!4v1654525352497!5m2!1sja!2sjp'></iframe>
+                    </div>
                 </DocumentStyle>
             </Body>
         </Fragment>

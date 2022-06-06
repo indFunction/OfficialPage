@@ -2,10 +2,12 @@
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
 import { FC } from 'react';
 import { Code, Example, Point, Warning } from 'components/contents/document/BlockText';
+import { Arrow } from 'components/contents/document/DecorationPlain';
 import { ImageLink } from 'components/contents/document/ImageLink';
 import { InformationCard } from 'components/contents/document/InformationCard';
 import { Link } from 'components/contents/document/Link';
 import { PictureGallery } from 'components/contents/document/PictureGallery';
+import { ScreenFrame } from 'components/contents/document/ScreenFramePlain';
 import { ST } from 'components/contents/document/SpanText';
 import { VideoFrameYouTube } from 'components/contents/document/VideoFrameYouTube';
 import { VideoLinkYouTube } from 'components/contents/document/VideoLinkYouTube';
@@ -18,6 +20,7 @@ type PageBuilderProps = {
 };
 
 const components = {
+    Arrow,
     Code,
     Example,
     ImageLink,
@@ -25,6 +28,7 @@ const components = {
     Link,
     PictureGallery,
     Point,
+    ScreenFrame,
     ST,
     VideoFrameYouTube,
     VideoLinkYouTube,

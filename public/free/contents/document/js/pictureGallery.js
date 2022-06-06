@@ -2,6 +2,8 @@ const pictureGalleryElements = document.getElementsByClassName('pictureGallery')
 let pictureGallerySlideNum = [];
 
 for (let i = 0; i < pictureGalleryElements.length; i++) {
+    if (pictureGalleryElements[i].classList.contains('filled')) continue;
+
     const data = pictureGalleryElements[i].getAttribute('data').split(',');
     const useBorder = pictureGalleryElements[i].getAttribute('useBorder');
     const isSlide = pictureGalleryElements[i].getAttribute('isSlide');
