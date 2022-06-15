@@ -1,5 +1,15 @@
 [
     {
+        "path": "0025",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/general/terminal.png",
+        "title": "Gitのリポジトリーを複製する",
+        "description": "コミット履歴を含めたリポジトリーの複製方法を紹介します。",
+        "date": [2022, 6, 15],
+        "category": "memo",
+        "keywords": ["Git", "リポジトリー", "複製", "コミット履歴", "コマンド"]
+    },
+    {
         "path": "0024",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/0024.png",
