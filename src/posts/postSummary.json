@@ -1,5 +1,15 @@
 [
     {
+        "path": "0026",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/0026.png",
+        "title": "クイック・ウェブサイト制作；導入編",
+        "description": "HTML，CSS，JSあたりを軽く解説します。",
+        "date": [2022, 6, 18],
+        "category": "explanation",
+        "keywords": ["ウェブサイト", "コード", "HTML", "CSS", "JS", "仕組み"]
+    },
+    {
         "path": "0025",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/general/terminal.png",
