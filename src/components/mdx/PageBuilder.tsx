@@ -9,6 +9,7 @@ import { Link } from 'components/contents/document/Link';
 import { PictureGallery } from 'components/contents/document/PictureGallery';
 import { ScreenFrame } from 'components/contents/document/ScreenFramePlain';
 import { ST } from 'components/contents/document/SpanText';
+import { Spoiler } from 'components/contents/document/Spoiler';
 import { VideoFrameYouTube } from 'components/contents/document/VideoFrameYouTube';
 import { VideoLinkYouTube } from 'components/contents/document/VideoLinkYouTube';
 import { BaseLayout } from 'components/mdx/BaseLayout';
@@ -29,6 +30,7 @@ const components = {
     PictureGallery,
     Point,
     ScreenFrame,
+    Spoiler,
     ST,
     VideoFrameYouTube,
     VideoLinkYouTube,

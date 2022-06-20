@@ -1,0 +1,61 @@
+.document .spoiler:first-child {
+    margin-top: 0;
+}
+.document .spoiler:last-child {
+    margin-bottom: 0;
+}
+
+.document .spoiler {
+    margin: 16px 0;
+}
+
+.document .spoiler > .spoilerItem {
+    margin: 16px 0;
+    padding-right: 8px;
+    border: solid 1px var(--document_use);
+    transition-property: color, background-color;
+    transition: 0.25s;
+}
+.document .spoiler > .spoilerItem:hover {
+    color: var(--document_base);
+    background-color: var(--document_use);
+    transition-property: color, background-color;
+    transition: 0.25s;
+}
+
+.document .spoiler > .spoilerItem > .rightArrow {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin: 0 8px;
+    vertical-align: middle;
+    border-top: solid 6px transparent;
+    border-bottom: solid 6px transparent;
+    border-left: solid 6px var(--document_use);
+    transform: rotate(0deg);
+    transition-property: border-left transform;
+    transition: 0.25s;
+}
+.document .spoiler > .spoilerItem:hover > .rightArrow {
+    border-left: solid 6px var(--document_base);
+    transition-property: border-left transform;
+    transition: 0.25s;
+}
+.document .spoiler.isOpen > .spoilerItem > .rightArrow {
+    transform: rotate(90deg);
+    transition-property: border-left transform;
+    transition: 0.25s;
+}
+
+.document .spoiler > .spoilerContent {
+    user-select: none;
+    overflow-y: hidden;
+    display: none;
+    height: 100%;
+    margin-top: 16px;
+}
+.document .spoiler.isOpen > .spoilerContent {
+    user-select: auto;
+    display: block;
+}

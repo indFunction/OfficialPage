@@ -7,6 +7,7 @@ import { DocumentStyle } from 'components/contents/DocumentStyle';
 import { ImageLink } from 'components/contents/document/ImageLink';
 import { InformationCard } from 'components/contents/document/InformationCard';
 import { PictureGallery } from 'components/contents/document/PictureGallery';
+import { Spoiler } from 'components/contents/document/Spoiler';
 import { Title } from 'components/contents/document/Title';
 import { VideoFrameYouTube } from 'components/contents/document/VideoFrameYouTube';
 import { VideoLinkYouTube } from 'components/contents/document/VideoLinkYouTube';
@@ -174,6 +175,10 @@ const Index: NextPage = () => {
                         <br />
                         free<span className='rightArrow'></span>contents<span className='rightArrow'></span>document
                     </p>
+
+                    <Spoiler item='ネタバレ注意'>
+                        <p>犯人はヤス</p>
+                    </Spoiler>
 
                     <h2>ブロック</h2>
 
