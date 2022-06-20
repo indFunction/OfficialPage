@@ -1,5 +1,15 @@
 [
     {
+        "path": "0027",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/0027.png",
+        "title": "1万円で売ることはできますか？",
+        "description": "面接にて出題される質問の模範解答です。",
+        "date": [2022, 6, 21],
+        "category": "novel",
+        "keywords": ["面接", "質問", "模範解答", "1万円", "ジョーク", "社会"]
+    },
+    {
         "path": "0026",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/0026.png",
