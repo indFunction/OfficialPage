@@ -1,5 +1,15 @@
 [
     {
+        "path": "0028",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/general/diary.png",
+        "title": "2022年06月のまとめ",
+        "description": "記事にするほどでもなかった写真などを紹介します。",
+        "date": [2022, 7, 1],
+        "category": "blog",
+        "keywords": ["日記", "写真", "まとめ"]
+    },
+    {
         "path": "0027",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/0027.png",
