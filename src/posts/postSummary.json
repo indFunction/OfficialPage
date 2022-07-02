@@ -1,5 +1,15 @@
 [
     {
+        "path": "0029",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/general/terminal.png",
+        "title": "Linuxを用いてボリュームを抹消する",
+        "description": "ライブOSからボリュームのデータを復元不可能します。",
+        "date": [2022, 7, 2],
+        "category": "memo",
+        "keywords": ["Linux", "Ubuntu", "コマンド", "ボリューム", "メディア", "削除", "抹消", "完全"]
+    },
+    {
         "path": "0028",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/general/diary.png",
