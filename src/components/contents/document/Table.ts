@@ -6,6 +6,8 @@ export const Table = css`
         ${DefaultItem}
 
         border-collapse: collapse;
+        width: 100%;
+        max-width: 100%;
         margin: 16px 0;
         color: ${({ theme: { colors } }) => colors.black};
 
@@ -14,8 +16,10 @@ export const Table = css`
         }
 
         th {
+            width: 0;
             margin: 0;
             padding: 4px;
+            white-space: nowrap;
             text-align: left;
             vertical-align: top;
             font-weight: 600;
