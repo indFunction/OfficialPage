@@ -1,0 +1,22 @@
+{
+    "editor.wordWrap": "on",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.autoGuessEncoding": true,
+    "files.eol": "\n",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.ignoreRebaseWarning": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "prettier.jsxSingleQuote": true,
+    "prettier.printWidth": 160,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.persistentSessionScrollback": 0,
+    "terminal.integrated.shellIntegration.history": 0,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.startupEditor": "none"
+}

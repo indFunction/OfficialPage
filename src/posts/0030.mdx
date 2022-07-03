@@ -1,0 +1,201 @@
+---
+thumbnail: '/media/thumbnails/general/note.png'
+title: '個人的なメモ；OSの初期設定'
+description: '自己流のセットアップを備忘録として纏めます。'
+date: [2022, 7, 2]
+category: 'memo'
+keywords: ['Windows', 'Ubuntu', '初期設定', 'セットアップ', 'テーマ', 'コンフィグ', 'テンプレート']
+---
+
+　一度も確認しないログやキャッシュは塵のように積り、ボリュームのデータは（SSDに言うのもナンセンスですが）散り々りになり、使えば使うほどパソコンの中身は汚れていきます。挙句の果てには削除したはずのデータが復元できてしまう実情に耐え切れず、<Link href='/posts/0029'>Linuxを用いてボリュームを抹消する</Link>でしょう。しかしOSごと消した後にはOSをインストールする必要があります。そしてセットアップを…嗚呼、なんてこった、設定の内容を忘れてしまった。
+
+　と、ならないように、几帳面な方は自分が使うOSの設定や標準で使用するソフトウェアの一覧などをどこかに記録しておきましょう。私も色々と纏めていましたが、この機会に改めて書き直してみました。上級者であれば自作のツールやらレジストリーを駆使して一瞬で設定してしまうのでしょうが、今は素人らしく馬鹿正直に列挙します。
+
+## Windows 10
+
+- **タスクバー**
+    - **設定**
+        - 検索は要らん。
+        - ガジェットは要らん。
+        - Cortanaは最も要らん。
+        - タスクビューは要る。
+    - **ピン留め**
+        1. エクスプローラー
+        2. Firefox
+        3. メモ帳
+        4. ペイント
+        5. BunCalc
+- **PC設定**
+    - **システム**
+        - **ディスプレイ**
+            - インターフェースのサイズは100%だ。
+        - **サウンド**
+            - 音量66.6667%は流石に五月蝿い。
+        - **通知とアクション**
+            - 通知は要らん。オススメもヒントも提案も要らん。
+        - **集中モード**
+            - 要らん。
+        - **電源とスリープ**
+            - ディスプレイを勝手に切るな。
+        - **バッテリー**
+            - バッテリーの節約は手動でやる。
+        - **マルチタスク**
+            - タイムラインにオススメは要らん。
+            - AltキーとTabキーを押したらウィンドウだけを表示しろ。
+        - **共有エクスペリエンス**
+            - デバイス間で共有するな。
+        - **詳細情報**
+            - PCの名前は「`Computer`」にでも設定しておけ。
+    - **デバイス**
+        - **自動再生**
+            - 何もするな。
+    - **個人用設定**
+        - **背景**
+            - 背景は黒色（`#000000`）一択。
+        - **色**
+            - アクセントカラーは灰色（`#404040`）一択。
+            - ダーク、不透明、ノー・アクセント。
+        - **ロック画面**
+            - 好きな画像でも設定しておけ。
+            - ヒントは要らん。
+        - **テーマ**
+            - サウンドなし。
+            - ついでに通話中に音量を下げるな。
+            - デスクトップはサハラにしておけ。
+        - **スタート**
+            - 全部オフに設定しておけ。
+    - **アプリ**
+        - **既定のアプリ**
+            - あとで変えておけ。
+        - **スタートアップ**
+            - OneDriveは要らん。
+    - **ゲーム**
+        - **Xbox Game Bar**
+            - 要らん。
+    - **簡単操作**
+        - **キーボード**
+            - ゲームを台無しにする奴は逝ってヨシ。
+    - **検索**
+        - **アクセス許可と履歴**
+            - セーフサーチは要らん。
+            - アカウントを弄るな。
+            - 履歴を残すな。
+        - **Windows検索**
+            - PC全体を調べろ。
+    - **プライバシー**
+        - **全般**
+            - 全部オフに設定しておけ。
+        - **音声認識**
+            - 全部オフに設定しておけ。
+        - **手書き入力と入力の個人用設定**
+            - 全部オフに設定しておけ。
+        - **診断とフィードバック**
+            - 全部オフに設定しておけ。
+            - フィードバックするな。
+        - **アクティビティーの履歴**
+            - 全部オフに設定しておけ。
+- **コントロールパネル**
+    - **電源オプション**
+        - カバーを閉じたときに何もするな。
+- **Microsoft IME**
+    - **学習と辞書**
+        - 学習するな。
+    - **予測入力**
+        - 予測するな。
+    - **デザイン**
+        - 画面にクソデカ文字を表示するな。
+- **デスクトップ**
+    - アイコンは小さくしろ。
+    - 自動整列しろ。
+- **エクスプローラー**
+    - **クイックアクセス**
+        1. ごみ箱
+        2. デスクトップ
+        3. ダウンロード
+        4. ローカルディスク
+    - **詳細表示**
+        1. 名前
+        2. 更新日時
+        3. 作成日時
+        4. サイズ
+        5. 種類
+        - 横幅調整用ファイル：`XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.xxx`
+    - **設定**
+        - 項目、拡張子、隠しファイルはオンに設定しておけ。
+        - リボンは隠しておけ。
+- **インストール＆設定するソフトウェア** (必須)
+    - <Link href='https://sevenzip.osdn.jp/'>7-Zip</Link>
+    - <Link href='https://www.mozilla.org/ja/firefox/new/'>Firefox</Link>
+        - <Link href='/media/others/0030/config/Firefox - Setting.tar'>コンフィグ</Link>：`C:\Users\User\AppData\Roaming\Mozilla\Firefox\Profiles\XXXXXXXX.default-release`
+    - <Link href='https://www.fosshub.com/Classic-Shell.html'>Classic Shell</Link>
+        - <Link href='/media/others/0030/config/Classic Shell - Menu Settings.xml'>コンフィグ</Link>：設定画面からインポート
+    - <Link href='https://www.winmoviemaker.com/jpn.html'>Windows ムービーメーカー</Link>
+    - <Link href='https://github.com/clsid2/mpc-hc/releases'>Media Player Classic</Link>
+        - <Link href='/media/others/0030/config/MPC-HC - Setting.reg'>コンフィグ</Link>：レジストリーを登録
+    - <Link href='http://www.brianapps.net/sizer4/'>Sizer</Link>
+        - <Link href='/media/others/0030/config/Sizer - Config.xml'>コンフィグ</Link>：設定画面からインポート
+    - <Link href='https://www.vector.co.jp/soft/dl/winnt/util/se175660.html'>マグネットウィンドウ</Link>
+        - <Link href='/media/others/0030/config/MagnetWindow - Setting $ MgntWnd.ini'>コンフィグ</Link>：`C:\Users\User\AppData\Roaming\3rd Project\MagnetWindow\MgntWnd.ini`
+- **インストール＆設定するソフトウェア** (推奨)
+    - **Common**
+        - <Link href='https://tera-net.com/library/tpad.html'>TeraPad</Link>
+            - <Link href='/media/others/0030/config/TeraPad - Setting $ TeraPad.ini'>コンフィグ</Link>：`C:\Users\User\AppData\Local\VirtualStore\Program Files (x86)\TeraPad\usr\User\TeraPad.ini`
+        - <Link href='https://typora.io/'>Typora</Link>
+            - <Link href='/media/others/0030/config/Typora - Setting $ profile.data'>コンフィグ</Link>：`C:\Users\User\AppData\Roaming\Typora\profile.data`
+        - <Link href='https://azure.microsoft.com/ja-jp/products/visual-studio-code/'>Visual Studio Code</Link>
+            - <Link href='/media/others/0030/config/Visual Studio Code - Setting $ settings.json'>コンフィグ</Link>：`C:\Users\User\AppData\Roaming\Code\User\settings.json`
+        - <Link href='https://ja.libreoffice.org/download/download/'>LibreOffice</Link>
+            - Writer
+                - <Link href='/media/others/0030/template/LibreOffice/LibreOffice - Writer.odt'>テンプレート</Link>：設定画面からインポート
+                - <Link href='/media/others/0030/template/LibreOffice/LibreOffice - Writer.odt'>テンプレート (レポート)</Link>：設定画面からインポート
+                - <Link href='/media/others/0030/template/LibreOffice/LibreOffice - Writer.odt'>テンプレート (小説)</Link>：設定画面からインポート
+            - Calc
+                - <Link href='/media/others/0030/template/LibreOffice/LibreOffice - Calc.ods'>テンプレート</Link>：設定画面からインポート
+            - Impress
+                - <Link href='/media/others/0030/template/LibreOffice/LibreOffice - Impress.odp'>テンプレート</Link>：設定画面からインポート
+    - **Graphic**
+        - <Link href='https://www.gimp.org/downloads/'>GIMP</Link>
+            - <Link href='/media/others/0030/config/GIMP - Setting.tar'>コンフィグ</Link>：`C:\Users\User\AppData\Roaming\GIMP\2.10`
+        - <Link href='https://www.blender.org/download/'>Blender</Link>
+            - <Link href='/media/others/0030/template/Blender - Template.blend'>テンプレート</Link>：設定画面からインポート
+        - <Link href='http://spring-fragrance.mints.ne.jp/aviutl/'>AviUtl</Link>
+            - <Link href='/media/others/0030/config/AviUtl - Config.tar'>コンフィグ</Link>：各ファイルに配置
+        - <Link href='https://obsproject.com/ja/download'>OBS Studio</Link>
+            - <Link href='/media/others/0030/config/OBS Studio - Profile - Config $ 一般.tar'>コンフィグ</Link>：設定画面からインポート
+    - **Audio**
+        - <Link href='https://www.aimp.ru/?do=download&os=windows'>AIMP</Link>
+            - <Link href='/media/others/0030/config/AIMP - Config $ AIMP.ini'>コンフィグ</Link>：`C:\Users\User\AppData\Roaming\AIMP\AIMP.ini`
+        - <Link href='https://www.audacityteam.org/'>Audacity</Link>
+            - <Link href='/media/others/0030/config/Audacity - Config $ audacity.cfg'>コンフィグ</Link>：`C:\Users\User\AppData\Roaming\audacity\audacity.cfg`
+    - **Utility**
+        - <Link href='http://nagatsuki.la.coocan.jp/buncalc/download.htm'>BunCalc</Link>
+        - <Link href='http://nagatsuki.la.coocan.jp/bunbackup/64bit/index.htm'>BunBackup</Link>
+        - <Link href='https://www.vector.co.jp/soft/dl/win95/util/se329220.html'>DelFolder</Link>
+        - <Link href='https://eraser.heidi.ie/download/'>Eraser</Link>
+        - <Link href='https://dmitrybrant.com/adsmanager'>ADS Manager</Link>
+        - <Link href='https://www.vector.co.jp/soft/dl/winnt/util/se156290.html'>お～瑠璃ね～む</Link>
+        - <Link href='https://www.vector.co.jp/soft/dl/winnt/util/se488922.html'>ZiiDetector</Link>
+
+## Ubuntu Studio
+
+- **メニュー／パネル**
+    1. ファイルマネージャー
+    2. ウェブブラウザー
+    3. ターミナルエミュレーター
+    4. Mousepad
+    5. 電卓
+- **設定**
+    - **電源管理**
+        - 蓋を閉じてもロックするな。
+        - 眠るな、落とすな。
+- **Mozc**
+    - **辞書**
+        - 学習するな。
+    - **サジェスト**
+        - サジェストするな。
+- **ファイルマネージャー**
+    - 詳細リストで表示しろ。
+- **Firefox**
+    - 頑張れ。
+- **Mousepad**
+    - 行番号、ツールバー、ステータスバーは欲しい。
