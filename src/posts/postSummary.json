@@ -5,7 +5,7 @@
         "thumbnail": "/media/thumbnails/general/bookmark.png",
         "title": "個人的なブックマーク；ソフトウェア",
         "description": "頻繁に使用しているソフトウェアを紹介します。",
-        "date": [2022, 7, 2],
+        "date": [2022, 7, 3],
         "category": "memo",
         "keywords": [
             "ブックマーク",
@@ -43,7 +43,7 @@
         "thumbnail": "/media/thumbnails/general/note.png",
         "title": "個人的なメモ；OSの初期設定",
         "description": "自己流のセットアップ手順を備忘録として纏めます。",
-        "date": [2022, 7, 2],
+        "date": [2022, 7, 3],
         "category": "memo",
         "keywords": ["Windows", "Ubuntu", "初期設定", "セットアップ", "テーマ", "コンフィグ", "テンプレート"]
     },
