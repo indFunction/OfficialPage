@@ -1,5 +1,15 @@
 [
     {
+        "path": "0032",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/0032.png",
+        "title": "ThinkPad X1 Fold",
+        "description": "またもや変態PCを手に入れてしまいました。",
+        "date": [2022, 7, 4],
+        "category": "blog",
+        "keywords": ["紹介", "ノートパソコン", "ThinkPad", "折り畳み", "浪漫"]
+    },
+    {
         "path": "0031",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/general/bookmark.png",
