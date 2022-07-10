@@ -1,5 +1,15 @@
 [
     {
+        "path": "0033",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/0033.png",
+        "title": "金沢工業大学 工大祭 ホームページ；通年",
+        "description": "第55期の工大祭の公式ホームページです。",
+        "date": [2022, 7, 10],
+        "category": "website",
+        "keywords": ["金沢工業大学", "KIT", "工大祭", "KITFES", "第55期", "ホームページ", "通年"]
+    },
+    {
         "path": "0032",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/0032.png",
