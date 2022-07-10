@@ -33,6 +33,10 @@ export const categoryItems: Item[] = [
         category: 'software'
     },
     {
+        name: 'ウェブサイト',
+        category: 'website'
+    },
+    {
         name: '解説',
         category: 'explanation'
     },
