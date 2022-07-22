@@ -5,12 +5,16 @@ type Item = {
 
 export const linkItems: Item[] = [
     {
-        name: 'Twitter',
-        url: 'https://twitter.com/indFunction'
+        name: 'Flash Orvilium',
+        url: 'https://flashorvilium.indfunction.work/'
     },
     {
         name: 'GitHub',
         url: 'https://github.com/indFunction'
+    },
+    {
+        name: 'Twitter',
+        url: 'https://twitter.com/indFunction'
     },
     {
         name: 'pixiv',
