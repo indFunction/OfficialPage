@@ -1,5 +1,15 @@
 [
     {
+        "path": "0037",
+        "isPublish": true,
+        "thumbnail": "/media/thumbnails/general/bookmark.png",
+        "title": "個人的なブックマーク；娯楽系YouTubeチャンネル",
+        "description": "個人的に気に入っているコンテンツを紹介します。",
+        "date": [2022, 7, 23],
+        "category": "memo",
+        "keywords": ["ブックマーク", "YouTube", "チャンネル", "作成", "技術", "紹介", "実況", "エンターテイメント", "ミーム", "アニメーション", "音楽"]
+    },
+    {
         "path": "0036",
         "isPublish": true,
         "thumbnail": "/media/thumbnails/0036.png",
